@@ -25,3 +25,10 @@ export type ExperienceDetailTypes = {
   currentlyWorkHere?: boolean;
   summary: string[];
 };
+
+export type SkillDetailTypes = {
+  logo: string | StaticImageData;
+  darkModeLogo?: string | StaticImageData;
+  label: string;
+  url: string;
+};
