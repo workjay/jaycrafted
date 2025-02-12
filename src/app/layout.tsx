@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Baloo_Bhai_2 } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
 
 const balooBhai = Baloo_Bhai_2({
   variable: "--font-baloo-bhai",

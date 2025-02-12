@@ -1,3 +1,11 @@
+import ContactUs from "@/components/sections/ContactUs";
+import Experience from "@/components/sections/Experience";
+
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <>
+      <Experience />
+      <ContactUs />
+    </>
+  );
 }

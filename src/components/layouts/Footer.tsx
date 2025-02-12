@@ -1,8 +1,10 @@
 "use client";
 
-import { Container, Typography, Link, Box } from "@mui/material";
-import { Copyright } from "@mui/icons-material";
-import { useThemeContext } from "./ThemeProvider";
+import { Typography, Link, Box } from "@mui/material";
+import { Copyright } from "lucide-react";
+import BodyContainer from "./BodyContainer";
+import { useThemeContext } from "../ThemeProvider";
+import { EXTERNAL_LINKS } from "@/lib/data";
 
 export default function Footer() {
   const { mode } = useThemeContext();
@@ -12,22 +14,21 @@ export default function Footer() {
       component="footer"
       sx={{
         py: 2,
-        mt: 4,
         textAlign: "center",
         bgcolor: "secondaryBackground",
         color: "text.primary",
       }}
     >
-      <Container maxWidth="lg">
+      <BodyContainer>
         <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-          <Copyright sx={{ fontSize: 16, verticalAlign: "middle" }} />
+          <Copyright size={16} />
           &nbsp;
           <Typography variant="body1">
             {new Date().getFullYear()} | Designed and
           </Typography>
           &nbsp;
           <Link
-            href="https://github.com/workjay/jaydepani.dev"
+            href={EXTERNAL_LINKS.GITHUB_REPO}
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -50,7 +51,7 @@ export default function Footer() {
           &nbsp;
           <Typography variant="body1">with ❤️ by Jay Depani</Typography>
         </Box>
-      </Container>
+      </BodyContainer>
     </Box>
   );
 }

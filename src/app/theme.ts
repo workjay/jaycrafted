@@ -15,12 +15,31 @@ const getTheme = (mode: "light" | "dark") =>
     typography: {
       fontFamily: "'Baloo Bhai 2', sans-serif",
       h1: {
-        fontSize: "2.5rem",
+        fontSize: "2rem",
         fontWeight: 700,
+        "@media (min-width:600px)": {
+          fontSize: "2.5rem",
+        },
+        "@media (min-width:900px)": {
+          fontSize: "3.5rem",
+        },
       },
       h2: {
-        fontSize: "2rem",
+        fontSize: "1.5rem",
         fontWeight: 600,
+        "@media (min-width:600px)": {
+          fontSize: "1.7rem",
+        },
+        "@media (min-width:900px)": {
+          fontSize: "2rem",
+        },
+      },
+      h3: {
+        fontSize: "1.2rem",
+        fontWeight: 600,
+        "@media (min-width:600px)": {
+          fontSize: "1.5rem",
+        },
       },
       body1: {
         fontSize: "1rem",
