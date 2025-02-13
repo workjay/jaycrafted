@@ -1,10 +1,10 @@
-import { X, Gitlab } from "lucide-react";
 import {
   NavLinkTypes,
   SocialLinkTypes,
   ExternalLinksTypes,
   ExperienceDetailTypes,
   SkillDetailTypes,
+  ProjectDetailTypes,
 } from "./types";
 
 export const EXTERNAL_LINKS: ExternalLinksTypes = {
@@ -14,7 +14,7 @@ export const EXTERNAL_LINKS: ExternalLinksTypes = {
 export const NAV_LINKS: NavLinkTypes[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Work", href: "#work" },
+  { label: "Works", href: "#works" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -196,5 +196,70 @@ export const SKILLS: SkillDetailTypes[] = [
     label: "Git",
     logo: "/images/logos/git.svg",
     url: "https://git-scm.com/",
+  },
+];
+
+export const PROJECTS: ProjectDetailTypes[] = [
+  {
+    name: "Bookify.AI",
+    description:
+      "We built a platform that allows users to interact with PDFs, books, documents, websites, YouTube videos, and more using AI-powered chat. Designed for students, researchers, and professionals, this tool transforms the way people learn and access information by enabling seamless AI-driven conversations with various content sources.",
+    url: "https://www.bookify.ai/",
+    previewImage: "/images/bookify.png",
+    technologies: [
+      "Next.js",
+      "Laravel",
+      "MySQL",
+      "OpenAI API",
+      "Stripe",
+      "Material UI",
+    ],
+  },
+  {
+    name: "Boltify.AI",
+    description:
+      "Boltify is a lead management system that automates meetings through cold calls and follow-ups from Google Maps. Designed for agencies, teams, startups, and B2B businesses, it streamlines lead generation and engagement with local businesses, making the process faster and more efficient.",
+    url: "https://www.boltify.ai/",
+    previewImage: "/images/boltify.png",
+    technologies: [
+      "Next.js",
+      "Laravel",
+      "MySQL",
+      "Google Places API",
+      "Stripe",
+      "Material UI",
+    ],
+  },
+  {
+    name: "FinishLine.AI",
+    description:
+      "FinishLine is a task management system designed for efficient team collaboration. It includes time tracking, real-time chat, and an instant meeting feature for seamless communication. With a focus on productivity, it helps teams stay organized and connected.",
+    url: "https://www.finishline.ai/",
+    previewImage: "/images/finishline.png",
+    technologies: [
+      "Next.js",
+      "Laravel",
+      "MySQL",
+      "WebRTC",
+      "Stripe",
+      "Material UI",
+    ],
+  },
+  {
+    name: "Care Homeopathy Clinic",
+    description:
+      "I developed a website for a homeopathy clinic to showcase their treatments and provide an easy way for users to get in touch through a contact form. Additionally, I integrated an AI chatbot that leverages the clinic's treatment data to answer users' health-related queries in real time, enhancing engagement and accessibility.",
+    url: "https://www.carehomeopathyclinic.com/",
+    previewImage: "/images/care_homeopathy_clinic.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "OpenAI",
+      "Voiceflow",
+      "Vercel",
+      "Material UI",
+      "Swiper",
+      "Emailjs",
+    ],
   },
 ];

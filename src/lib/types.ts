@@ -33,3 +33,11 @@ export type SkillDetailTypes = {
   label: string;
   url: string;
 };
+
+export type ProjectDetailTypes = {
+  name: string;
+  description: string;
+  url: string;
+  previewImage: string;
+  technologies: string[];
+};

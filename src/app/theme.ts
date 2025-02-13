@@ -69,6 +69,15 @@ const getTheme = (mode: "light" | "dark") =>
       },
       secondaryBackground: mode === "light" ? "#EEEEEE" : "#393E46",
     } as PaletteOptions,
+    components: {
+      MuiCard: {
+        styleOverrides: {
+          root: {
+            boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
+          },
+        },
+      },
+    },
   });
 
 export default getTheme;
