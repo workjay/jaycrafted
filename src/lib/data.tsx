@@ -1,4 +1,4 @@
-import { Github, X, Gitlab } from "lucide-react";
+import { X, Gitlab } from "lucide-react";
 import {
   NavLinkTypes,
   SocialLinkTypes,
@@ -20,16 +20,21 @@ export const NAV_LINKS: NavLinkTypes[] = [
 
 export const SOCIAL_LINKS: SocialLinkTypes[] = [
   {
-    icon: Github,
+    icon: "/images/logos/github-light.svg",
+    darkModeIcon: "/images/logos/github-dark.svg",
     url: "https://github.com/workjay",
+    iconAlt: "GitHub Icon",
   },
   {
-    icon: Gitlab,
+    icon: "/images/logos/gitlab.svg",
     url: "https://gitlab.com/workjay",
+    iconAlt: "GitLab Icon",
   },
   {
-    icon: X,
+    icon: "/images/logos/x-light.svg",
+    darkModeIcon: "/images/logos/x-dark.svg",
     url: "https://x.com/depani_jay",
+    iconAlt: "X Icon",
   },
 ];
 

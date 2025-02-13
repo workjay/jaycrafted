@@ -70,6 +70,7 @@ export default function Navbar(props: Props) {
               sx={{
                 justifyContent: "space-between",
                 width: "100%",
+                padding: "0 !important",
               }}
             >
               {/* Logo */}

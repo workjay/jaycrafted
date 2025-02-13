@@ -1,4 +1,3 @@
-import { LucideIcon } from "lucide-react";
 import type { StaticImageData } from "next/image";
 
 export type ExternalLinksTypes = {
@@ -11,7 +10,9 @@ export type NavLinkTypes = {
 };
 
 export type SocialLinkTypes = {
-  icon: LucideIcon;
+  icon: string;
+  darkModeIcon?: string;
+  iconAlt: string;
   url: string;
 };
 

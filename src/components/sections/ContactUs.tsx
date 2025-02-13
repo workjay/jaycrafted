@@ -58,8 +58,8 @@ export default function ContactUs() {
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="touch">Get in</PrimaryHeader>
         <SecondaryText>
-          What&rsquo;s next? If you&rsquo;re looking for a developer, have a
-          question, or just want to connect, feel free to reach out. I&rsquo;d
+          What&apos;s next? If you&apos;re looking for a developer, have a
+          question, or just want to connect, feel free to reach out. I&apos;d
           love to hear from you!
         </SecondaryText>
         <StyledBox mt={"2rem"}>
