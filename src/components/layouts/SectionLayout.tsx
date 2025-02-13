@@ -3,9 +3,10 @@ import BodyContainer from "./BodyContainer";
 
 interface SectionLayoutProps {
   children: React.ReactNode;
+  id?: string;
 }
 
-export default function SectionLayout({ children }: SectionLayoutProps) {
+export default function SectionLayout({ children, id }: SectionLayoutProps) {
   return (
     <Box
       component="section"
@@ -13,6 +14,7 @@ export default function SectionLayout({ children }: SectionLayoutProps) {
         py: { xs: "2rem", sm: "3rem", md: "5rem" },
         textAlign: "center",
       }}
+      id={id}
     >
       <BodyContainer>{children}</BodyContainer>
     </Box>

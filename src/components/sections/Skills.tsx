@@ -8,7 +8,7 @@ import { SKILLS } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <SectionLayout>
+    <SectionLayout id="skills">
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="Skills">Specialized </PrimaryHeader>
         <SecondaryText>

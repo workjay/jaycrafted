@@ -54,7 +54,7 @@ export default function ContactUs() {
   }, []);
 
   return (
-    <SectionLayout>
+    <SectionLayout id="contact">
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="touch">Get in</PrimaryHeader>
         <SecondaryText>

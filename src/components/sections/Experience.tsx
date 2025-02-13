@@ -8,7 +8,7 @@ import { ExperienceDetailTypes } from "@/lib/types";
 
 export default function Experience() {
   return (
-    <SectionLayout>
+    <SectionLayout id="experience">
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="Journey">Career </PrimaryHeader>
         <SecondaryText>
