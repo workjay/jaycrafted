@@ -6,7 +6,7 @@ import AboutMeDetail from "../general/AboutMeDetail";
 
 export default function AboutMe() {
   return (
-    <SectionLayout id="about">
+    <SectionLayout id="about" diffBg>
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="me">About </PrimaryHeader>
         <Grid2 container spacing={4} mt={4} width={"100%"}>
