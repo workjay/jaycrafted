@@ -250,7 +250,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     name: "Care Homeopathy Clinic",
     description:
       "I developed a website for a homeopathy clinic to showcase their treatments and provide an easy way for users to get in touch through a contact form. Additionally, I integrated an AI chatbot that leverages the clinic's treatment data to answer users' health-related queries in real time, enhancing engagement and accessibility.",
-    url: "https://www.carehomeopathyclinic.com/",
+    url: "http://localhost:3000/",
     previewImage: "/images/care_homeopathy_clinic.png",
     technologies: [
       "Next.js",
