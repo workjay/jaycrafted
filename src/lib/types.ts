@@ -41,3 +41,10 @@ export type ProjectDetailTypes = {
   previewImage: string;
   technologies: string[];
 };
+
+export type TestimonialDetailTypes = {
+  personName: string;
+  personAvatar?: string;
+  testimonial: string;
+  title: string;
+};

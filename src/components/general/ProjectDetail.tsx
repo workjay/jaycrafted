@@ -22,6 +22,7 @@ const StyledImageWrapper = styled(Box)(({ theme }) => ({
     width: "100%",
     height: "100%",
     maxHeight: 350,
+    minHeight: 200,
     borderRadius: 10,
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
     "& img": {
