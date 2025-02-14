@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronUp } from "lucide-react";
-import { cloneElement, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import {
   AppBar,
@@ -30,22 +30,6 @@ import ScrollTop from "../general/ScrollTop";
 
 interface Props {
   window?: () => Window;
-  children?: React.ReactElement<{ elevation?: number }>;
-}
-
-function ElevationScroll(props: Props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-    target: window ? window() : undefined,
-  });
-
-  return children
-    ? cloneElement(children, {
-        elevation: trigger ? 4 : 0,
-      })
-    : null;
 }
 
 export default function Navbar(props: Props) {
@@ -54,132 +38,144 @@ export default function Navbar(props: Props) {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const { toggleTheme, mode } = useThemeContext();
 
+  // Detect scroll position
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 20, // Start effect after 20px scroll
+    target: props.window ? props.window() : undefined,
+  });
+
   const toggleDrawer = () => setMobileOpen(!mobileOpen);
 
   return (
     <>
-      <ElevationScroll {...props}>
-        <AppBar
-          sx={{
-            backgroundColor: "background.paper",
-            color: "text.primary",
-          }}
-        >
-          <BodyContainer>
-            <Toolbar
-              sx={{
-                justifyContent: "space-between",
-                width: "100%",
-                padding: "0 !important",
-              }}
+      <AppBar
+        sx={{
+          backgroundColor: trigger
+            ? "rgba(255, 255, 255, 0.8)" // Light mode: Semi-transparent white
+            : "transparent", // Fully transparent when at the top
+          backdropFilter: "blur(10px)", // Blurred background effect
+          color: "text.primary",
+          transition: "background-color 0.3s ease",
+          boxShadow: "none",
+        }}
+      >
+        <BodyContainer>
+          <Toolbar
+            sx={{
+              justifyContent: "space-between",
+              width: "100%",
+              padding: "0 !important",
+            }}
+          >
+            {/* Logo */}
+            <Typography
+              variant="h4"
+              sx={{ fontWeight: 600 }}
+              component={"a"}
+              href="/"
             >
-              {/* Logo */}
-              <Typography
-                variant="h4"
-                sx={{ fontWeight: 600 }}
-                component={"a"}
-                href="/"
-              >
-                {`<JD />`}
-              </Typography>
+              {`<JD />`}
+            </Typography>
 
-              {/* Desktop Navigation */}
-              {!isMobile && (
-                <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
-                  <Box sx={{ display: "flex", gap: 4 }}>
-                    {NAV_LINKS.map(({ label, href }: NavLinkTypes) => (
-                      <Link
-                        key={label}
-                        href={href}
-                        style={{
-                          textDecoration: "none",
-                          color: "inherit",
+            {/* Desktop Navigation */}
+            {!isMobile && (
+              <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
+                <Box sx={{ display: "flex", gap: 4 }}>
+                  {NAV_LINKS.map(({ label, href }: NavLinkTypes) => (
+                    <Link
+                      key={label}
+                      href={href}
+                      style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                      }}
+                    >
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontWeight: 500,
+                          "&:hover": {
+                            color: mode === "light" ? "#111827" : "#EEEEEE",
+                          },
                         }}
                       >
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontWeight: 500,
-                            "&:hover": {
-                              color: mode === "light" ? "#111827" : "#EEEEEE",
-                            },
-                          }}
-                        >
-                          {label}
-                        </Typography>
-                      </Link>
-                    ))}
-                  </Box>
-
-                  <Divider orientation="vertical" flexItem />
-
-                  <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-                    <IconButton onClick={toggleTheme}>
-                      {mode === "light" ? <Moon /> : <Sun />}
-                    </IconButton>
-                    <DownloadCVButton />
-                  </Box>
+                        {label}
+                      </Typography>
+                    </Link>
+                  ))}
                 </Box>
-              )}
 
-              {/* Mobile Menu Button */}
-              {isMobile && (
-                <IconButton onClick={toggleDrawer}>
-                  <Menu />
-                </IconButton>
-              )}
-            </Toolbar>
-          </BodyContainer>
+                <Divider orientation="vertical" flexItem />
 
-          {/* Mobile Drawer */}
-          <Drawer anchor="right" open={mobileOpen} onClose={toggleDrawer}>
-            <List sx={{ width: 250 }}>
-              <ListItem
-                secondaryAction={
-                  <IconButton edge="end" onClick={toggleDrawer}>
-                    <X />
+                <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+                  <IconButton onClick={toggleTheme}>
+                    {mode === "light" ? <Moon /> : <Sun />}
                   </IconButton>
-                }
-              >
-                <ListItemText
-                  primary="<JD />"
-                  slotProps={{
-                    primary: {
-                      variant: "h4",
-                      fontWeight: 600,
-                    },
-                  }}
-                />
-              </ListItem>
-              <Divider />
-              {NAV_LINKS.map(({ label, href }: NavLinkTypes) => (
-                <ListItem key={label} disablePadding>
-                  <ListItemButton
-                    component={Link}
-                    href={href}
-                    onClick={toggleDrawer}
-                  >
-                    <ListItemText primary={label} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
-              <Divider />
-              <ListItem disablePadding>
-                <ListItemButton onClick={toggleTheme}>
-                  <ListItemText primary="Switch Theme" />
-                  {mode === "light" ? <Moon /> : <Sun />}
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <Box display={"flex"} justifyContent={"center"} width={"100%"}>
                   <DownloadCVButton />
                 </Box>
+              </Box>
+            )}
+
+            {/* Mobile Menu Button */}
+            {isMobile && (
+              <IconButton onClick={toggleDrawer}>
+                <Menu />
+              </IconButton>
+            )}
+          </Toolbar>
+        </BodyContainer>
+
+        {/* Mobile Drawer */}
+        <Drawer anchor="right" open={mobileOpen} onClose={toggleDrawer}>
+          <List sx={{ width: 250 }}>
+            <ListItem
+              secondaryAction={
+                <IconButton edge="end" onClick={toggleDrawer}>
+                  <X />
+                </IconButton>
+              }
+            >
+              <ListItemText
+                primary="<JD />"
+                slotProps={{
+                  primary: {
+                    variant: "h4",
+                    fontWeight: 600,
+                  },
+                }}
+              />
+            </ListItem>
+            <Divider />
+            {NAV_LINKS.map(({ label, href }: NavLinkTypes) => (
+              <ListItem key={label} disablePadding>
+                <ListItemButton
+                  component={Link}
+                  href={href}
+                  onClick={toggleDrawer}
+                >
+                  <ListItemText primary={label} />
+                </ListItemButton>
               </ListItem>
-            </List>
-          </Drawer>
-        </AppBar>
-      </ElevationScroll>
+            ))}
+            <Divider />
+            <ListItem disablePadding>
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemText primary="Switch Theme" />
+                {mode === "light" ? <Moon /> : <Sun />}
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <Box display={"flex"} justifyContent={"center"} width={"100%"}>
+                <DownloadCVButton />
+              </Box>
+            </ListItem>
+          </List>
+        </Drawer>
+      </AppBar>
+
       <Toolbar id="back-to-top-anchor" />
+
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top">
           <ChevronUp />
