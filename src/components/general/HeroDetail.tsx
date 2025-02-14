@@ -26,7 +26,7 @@ export default function HeroDetail() {
         </Box>
         <Box display={"flex"} alignItems={"center"} gap={1}>
           <StatusBadge />
-          <Typography variant="body1">
+          <Typography variant="body1" align="left">
             Let&apos;s build something amazing together!
           </Typography>
         </Box>

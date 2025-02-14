@@ -20,7 +20,13 @@ export default function Footer() {
       }}
     >
       <BodyContainer>
-        <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
+        <Box
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          flexWrap="wrap"
+          textAlign={"center"}
+        >
           <Copyright size={16} />
           &nbsp;
           <Typography variant="body1">
