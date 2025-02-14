@@ -80,7 +80,7 @@ export default function Navbar(props: Props) {
                 component={"a"}
                 href="/"
               >
-                {`<JR />`}
+                {`<JD />`}
               </Typography>
 
               {/* Desktop Navigation */}
@@ -142,7 +142,7 @@ export default function Navbar(props: Props) {
                 }
               >
                 <ListItemText
-                  primary="<JR />"
+                  primary="<JD />"
                   slotProps={{
                     primary: {
                       variant: "h4",
