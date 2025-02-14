@@ -2,6 +2,17 @@
   "name": "jaycrafted",
   "version": "0.1.0",
   "private": true,
+  "description": "My personal portfolio website showcasing my projects, skills, and experience.",
+  "author": "Jay Depani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workjay/jaycrafted.git"
+  },
+  "bugs": {
+    "url": "https://github.com/workjay/jaycrafted/issues"
+  },
+  "homepage": "http://localhost:3000",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
