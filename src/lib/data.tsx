@@ -9,7 +9,7 @@ import {
 } from "./types";
 
 export const EXTERNAL_LINKS: ExternalLinksTypes = {
-  GITHUB_REPO: "https://github.com/workjay/jaydepani.dev",
+  GITHUB_REPO: "https://github.com/workjay/jaycrafted",
 };
 
 export const NAV_LINKS: NavLinkTypes[] = [

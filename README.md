@@ -1,11 +1,11 @@
 <h1 align="center">
-  jaydepani.dev
+  jaycrafted
 </h1>
 <p align="center">
   My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://mui.com" target="_blank">Material UI</a> and deployed on <a href="https://vercel.com" target="_blank">Vercel</a>.⚡
 </p>
 
-<!-- ![preview](https://raw.githubusercontent.com/workjay/jaydepani.dev/main/thumbnail.png) -->
+<!-- ![preview](https://raw.githubusercontent.com/workjay/jaycrafted/main/thumbnail.png) -->
 
 ## Tech Stack
 
@@ -17,12 +17,12 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/workjay/jaydepani.dev.git
-$ cd jaydepani.dev
+$ git clone https://github.com/workjay/jaycrafted.git
+$ cd jaycrafted
 $ npm install
 $ npm run dev
 ```
 
 ## License
 
-Licensed under the [MIT license](https://github.com/workjay/jaydepani.dev/blob/main/LICENSE).
+Licensed under the [MIT license](https://github.com/workjay/jaycrafted/blob/main/LICENSE).
