@@ -43,9 +43,11 @@ export const EXPERIENCES: ExperienceDetailTypes[] = [
   {
     logo: "/images/logos/upwork.svg",
     logoAlt: "Upwork logo",
+    url: "https://www.upwork.com/freelancers/~01abb74e514da03118?mp_source=share",
     position: "Freelancer",
     startDate: new Date(2024, 3),
     currentlyWorkHere: true,
+    showLinkToProfileIcon: true,
     summary: [
       "After gaining valuable experience at IIH Global, I transitioned into full-time freelancing, where I worked with clients worldwide on diverse projects.",
       "As a Full-Stack Developer, I continued working with React, Next.js, Node.js, Nest.js, MySQL, and PostgreSQL while also expanding my expertise in Laravel for backend development.",
@@ -55,6 +57,7 @@ export const EXPERIENCES: ExperienceDetailTypes[] = [
     logo: "/images/logos/iih-global.png",
     darkModeLogo: "/images/logos/iih-global-dark.png",
     logoAlt: "IIH Global logo",
+    url: "https://www.iihglobal.com/",
     position: "Full Stack Developer",
     startDate: new Date(2021, 6),
     endDate: new Date(2024, 2),

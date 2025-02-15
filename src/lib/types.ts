@@ -20,11 +20,13 @@ export type ExperienceDetailTypes = {
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
   logoAlt: string;
+  url: string;
   position: string;
   startDate: Date;
   endDate?: Date;
   currentlyWorkHere?: boolean;
   summary: string[];
+  showLinkToProfileIcon?: boolean;
 };
 
 export type SkillDetailTypes = {

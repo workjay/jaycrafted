@@ -4,6 +4,8 @@ import { ExperienceDetailTypes } from "@/lib/types";
 import { Box, Card, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 import { useThemeContext } from "../ThemeProvider";
+import Link from "next/link";
+import ImageWrapper from "./ImageWrapper";
 
 const dateFormatOptions: Intl.DateTimeFormatOptions = {
   year: "numeric",
@@ -19,6 +21,7 @@ export default function ExperienceDetail({
   currentlyWorkHere,
   position,
   summary,
+  url,
 }: ExperienceDetailTypes) {
   const { mode } = useThemeContext();
 
@@ -31,14 +34,19 @@ export default function ExperienceDetail({
             flexDirection={"column"}
             width={"100%"}
             justifyContent={"flex-start"}
+            alignItems={"flex-start"}
             gap={1}
           >
-            <Image
-              src={darkModeLogo && mode === "dark" ? darkModeLogo : logo}
-              alt={logoAlt}
-              width={120}
-              height={40}
-            />
+            <Link href={url} target="_blank">
+              <ImageWrapper>
+                <Image
+                  src={darkModeLogo && mode === "dark" ? darkModeLogo : logo}
+                  alt={logoAlt}
+                  width={120}
+                  height={40}
+                />
+              </ImageWrapper>
+            </Link>
             <Typography variant="body1" align="left">
               {new Intl.DateTimeFormat("en-US", dateFormatOptions).format(
                 startDate
@@ -60,6 +68,7 @@ export default function ExperienceDetail({
             flexDirection={"column"}
             width={"100%"}
             justifyContent={"flex-start"}
+            alignItems={"flex-start"}
             gap={1}
           >
             <Typography variant="h3" align="left">
