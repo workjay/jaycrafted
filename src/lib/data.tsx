@@ -218,6 +218,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Stripe",
       "Material UI",
     ],
+    title: "Full Stack Developer",
   },
   {
     name: "Boltify.AI",
@@ -233,6 +234,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Stripe",
       "Material UI",
     ],
+    title: "Full Stack Developer",
   },
   {
     name: "FinishLine.AI",
@@ -248,6 +250,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Stripe",
       "Material UI",
     ],
+    title: "Full Stack Developer",
   },
   {
     name: "Care Homeopathy Clinic",
@@ -265,6 +268,115 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Swiper",
       "Emailjs",
     ],
+    title: "Front-end Developer",
+  },
+  {
+    name: "HealthLOQ",
+    description:
+      "HealthLoq is a secure healthcare platform that ensures the authenticity and traceability of medical products using blockchain technology. It helps verify product legitimacy and enhances patient safety.",
+    url: "https://healthloq.com/",
+    previewImage: "/images/healthloq.png",
+    technologies: [
+      "React",
+      "Nest.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Stripe",
+      "Material UI",
+      "Socket.io",
+    ],
+    title: "Full Stack Developer",
+  },
+  {
+    name: "Candu Maintenance",
+    description:
+      "Candu Maintenance is a comprehensive platform that streamlines maintenance and facility management services. It offers features like task tracking, service requests, and reporting to improve operational efficiency.",
+    url: "https://www.candumaintenance.com/",
+    previewImage: "/images/candu_maintenance.png",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "AWS",
+      "DynamoDB",
+      "Stripe",
+      "Prime React",
+    ],
+    title: "Full Stack Developer",
+  },
+  {
+    name: "YumyHub",
+    description:
+      "YumyHub is a subscription-based social platform that provides exclusive access to content from your favorite creators. It enables users to engage with unique, premium content across various categories.",
+    url: "https://yumyhub.com/",
+    previewImage: "/images/yumyhub.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Socket.io",
+      "Material UI",
+      "Stripe",
+      "MassPay",
+      "Cosmo",
+      "NETbilling",
+      "Actum Processing",
+      "AWS",
+    ],
+    title: "Full Stack Developer",
+  },
+  {
+    name: "StockPe",
+    description:
+      "StockPe is a stock market learning platform that gamifies trading with real-time market data. It allows users to participate in virtual stock market competitions and improve their trading skills risk-free. I contributed to this project as a backend developer, ensuring seamless data handling, API integrations, and system performance.",
+    url: "https://stockpe.app/",
+    previewImage: "/images/stockpe.png",
+    technologies: ["Node.js", "Express.js", "MySQL", "Socket.io", "Razorpay"],
+    title: "Back-end Developer",
+  },
+  {
+    name: "Khelnet",
+    description:
+      "Khelnet is a sports academy management platform that helps academies streamline student and staff management, including attendance, fees, and reminders. I contributed as a backend developer, handling APIs and system optimization.",
+    url: "https://www.khelnet.in/",
+    previewImage: "/images/khelnet.png",
+    technologies: ["Node.js", "Express.js", "MySQL", "Socket.io", "Razorpay"],
+    title: "Back-end Developer",
+  },
+  {
+    name: "Diyan Papers",
+    description:
+      "The Diyan Papers Stock Management System is an admin panel for managing inventory, stock, and orders efficiently. It streamlines stock tracking, procurement, and distribution.",
+    url: "",
+    previewImage: "/images/diyan_papers.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Material UI",
+      "Vuexy",
+      "Socket.io",
+    ],
+    title: "Full Stack Developer",
+  },
+  {
+    name: "Wk Leap",
+    description:
+      "WK Leap is a social platform for WordPress professionals to connect, share insights, and stay updated with the latest trends. It includes features like posts, blogs, chats, groups, and connections, enabling developers to engage and collaborate like Stack Overflow.",
+    url: "",
+    previewImage: "/images/wkleap.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Socket.io",
+      "Material UI",
+    ],
+    title: "Full Stack Developer",
   },
 ];
 

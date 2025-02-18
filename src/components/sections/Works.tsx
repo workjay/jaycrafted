@@ -16,7 +16,8 @@ export default function Works() {
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <PrimaryHeader highlightedText="Projects">Featured </PrimaryHeader>
         <SecondaryText>
-          Highlights from my journey of building digital experiences:
+          Highlights from my journey of building and collaborating on digital
+          experiences:
         </SecondaryText>
         <Box display={"flex"} flexDirection={"column"} mt={4} width={"100%"}>
           <PrimarySlider>

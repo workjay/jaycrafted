@@ -16,29 +16,38 @@ const StyledImageWrapper = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.secondaryBackground,
   height: "100%",
   padding: "3rem",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  "& > a, & > div": {
+    display: "block",
+    height: "fit-content",
+    width: "100%",
+  },
   "& div": {
     position: "relative",
     overflow: "hidden",
     width: "100%",
-    height: "100%",
-    maxHeight: 350,
-    minHeight: 200,
     borderRadius: 10,
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-    "& img": {
-      width: "100%",
-      objectFit: "cover",
-      position: "absolute",
-      top: 0,
-      left: 0,
-    },
+  },
+  "& picture": {
+    display: "block",
+    minHeight: 200,
+    maxHeight: 350,
+  },
+  "& img": {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    display: "block",
   },
   [theme.breakpoints.down("md")]: {
     padding: "1.5rem",
   },
 }));
 
-const StyledProectInfoWrapper = styled(Box)(({ theme }) => ({
+const StyledProjectInfoWrapper = styled(Box)(({ theme }) => ({
   padding: "3rem",
   display: "flex",
   flexDirection: "column",
@@ -61,23 +70,33 @@ export default function ProjectDetail({
   name,
   description,
   technologies,
+  title,
 }: ProjectDetailTypes) {
   return (
     <Grid2 container>
       <Grid2 size={{ xs: 12, md: 6 }}>
         <StyledImageWrapper>
-          <Link href={url} target="_blank">
+          {!!url ? (
+            <Link href={url} target="_blank">
+              <Box>
+                <picture>
+                  <img src={previewImage} alt={"Project preview image"} />
+                </picture>
+              </Box>
+            </Link>
+          ) : (
             <Box>
               <picture>
                 <img src={previewImage} alt={"Project preview image"} />
               </picture>
             </Box>
-          </Link>
+          )}
         </StyledImageWrapper>
       </Grid2>
       <Grid2 size={{ xs: 12, md: 6 }}>
-        <StyledProectInfoWrapper>
+        <StyledProjectInfoWrapper>
           <Typography variant="h3">{name}</Typography>
+          <Typography variant="subtitle1">{title}</Typography>
           <Typography variant="body1" align="left">
             {description}
           </Typography>
@@ -93,10 +112,12 @@ export default function ProjectDetail({
               />
             ))}
           </Box>
-          <IconButton LinkComponent={Link} href={url} target="_blank">
-            <ExternalLink />
-          </IconButton>
-        </StyledProectInfoWrapper>
+          {!!url && (
+            <IconButton LinkComponent={Link} href={url} target="_blank">
+              <ExternalLink />
+            </IconButton>
+          )}
+        </StyledProjectInfoWrapper>
       </Grid2>
     </Grid2>
   );

@@ -14,6 +14,10 @@ const StyledSwiperWrapper = styled(Box)(() => ({
   width: "100%",
   "& .swiper": {
     padding: "10px 0",
+    "& .swiper-wrapper": {
+      display: "flex",
+      alignItems: "center",
+    },
   },
 }));
 
