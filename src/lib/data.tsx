@@ -209,7 +209,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "We built a platform that allows users to interact with PDFs, books, documents, websites, YouTube videos, and more using AI-powered chat. Designed for students, researchers, and professionals, this tool transforms the way people learn and access information by enabling seamless AI-driven conversations with various content sources.",
     url: "https://www.bookify.ai/",
-    previewImage: "/images/bookify.png",
+    previewImage: "/images/projects/bookify.png",
     technologies: [
       "Next.js",
       "Laravel",
@@ -225,7 +225,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "Boltify is a lead management system that automates meetings through cold calls and follow-ups from Google Maps. Designed for agencies, teams, startups, and B2B businesses, it streamlines lead generation and engagement with local businesses, making the process faster and more efficient.",
     url: "https://www.boltify.ai/",
-    previewImage: "/images/boltify.png",
+    previewImage: "/images/projects/boltify.png",
     technologies: [
       "Next.js",
       "Laravel",
@@ -241,7 +241,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "FinishLine is a task management system designed for efficient team collaboration. It includes time tracking, real-time chat, and an instant meeting feature for seamless communication. With a focus on productivity, it helps teams stay organized and connected.",
     url: "https://www.finishline.ai/",
-    previewImage: "/images/finishline.png",
+    previewImage: "/images/projects/finishline.png",
     technologies: [
       "Next.js",
       "Laravel",
@@ -257,7 +257,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "I developed a website for a homeopathy clinic to showcase their treatments and provide an easy way for users to get in touch through a contact form. Additionally, I integrated an AI chatbot that leverages the clinic's treatment data to answer users' health-related queries in real time, enhancing engagement and accessibility.",
     url: "https://www.carehomeopathyclinic.com/",
-    previewImage: "/images/care_homeopathy_clinic.png",
+    previewImage: "/images/projects/care_homeopathy_clinic.png",
     technologies: [
       "Next.js",
       "React",
@@ -275,7 +275,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "HealthLoq is a secure healthcare platform that ensures the authenticity and traceability of medical products using blockchain technology. It helps verify product legitimacy and enhances patient safety.",
     url: "https://healthloq.com/",
-    previewImage: "/images/healthloq.png",
+    previewImage: "/images/projects/healthloq.png",
     technologies: [
       "React",
       "Nest.js",
@@ -294,7 +294,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "Candu Maintenance is a comprehensive platform that streamlines maintenance and facility management services. It offers features like task tracking, service requests, and reporting to improve operational efficiency.",
     url: "https://www.candumaintenance.com/",
-    previewImage: "/images/candu_maintenance.png",
+    previewImage: "/images/projects/candu_maintenance.png",
     technologies: [
       "Next.js",
       "Node.js",
@@ -310,7 +310,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "YumyHub is a subscription-based social platform that provides exclusive access to content from your favorite creators. It enables users to engage with unique, premium content across various categories.",
     url: "https://yumyhub.com/",
-    previewImage: "/images/yumyhub.png",
+    previewImage: "/images/projects/yumyhub.png",
     technologies: [
       "React",
       "Node.js",
@@ -332,7 +332,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "StockPe is a stock market learning platform that gamifies trading with real-time market data. It allows users to participate in virtual stock market competitions and improve their trading skills risk-free. I contributed to this project as a backend developer, ensuring seamless data handling, API integrations, and system performance.",
     url: "https://stockpe.app/",
-    previewImage: "/images/stockpe.png",
+    previewImage: "/images/projects/stockpe.png",
     technologies: ["Node.js", "Express.js", "MySQL", "Socket.io", "Razorpay"],
     title: "Back-end Developer",
   },
@@ -341,7 +341,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "Khelnet is a sports academy management platform that helps academies streamline student and staff management, including attendance, fees, and reminders. I contributed as a backend developer, handling APIs and system optimization.",
     url: "https://www.khelnet.in/",
-    previewImage: "/images/khelnet.png",
+    previewImage: "/images/projects/khelnet.png",
     technologies: ["Node.js", "Express.js", "MySQL", "Socket.io", "Razorpay"],
     title: "Back-end Developer",
   },
@@ -350,7 +350,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "The Diyan Papers Stock Management System is an admin panel for managing inventory, stock, and orders efficiently. It streamlines stock tracking, procurement, and distribution.",
     url: "",
-    previewImage: "/images/diyan_papers.png",
+    previewImage: "/images/projects/diyan_papers.png",
     technologies: [
       "React",
       "Node.js",
@@ -367,7 +367,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     description:
       "WK Leap is a social platform for WordPress professionals to connect, share insights, and stay updated with the latest trends. It includes features like posts, blogs, chats, groups, and connections, enabling developers to engage and collaborate like Stack Overflow.",
     url: "",
-    previewImage: "/images/wkleap.png",
+    previewImage: "/images/projects/wkleap.png",
     technologies: [
       "React",
       "Node.js",
@@ -382,24 +382,10 @@ export const PROJECTS: ProjectDetailTypes[] = [
 
 export const TESTIMONIALS: TestimonialDetailTypes[] = [
   {
-    personName: "Krisztian Gyuris",
-    personAvatar: "",
-    title: "Founder - inboxgenie.io",
+    personName: "Pratik Kansagara",
+    personAvatar: "/images/client-profile-pictures/pratik-kansagara.jpeg",
+    title: "Clinic Owner",
     testimonial:
-      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
-  },
-  {
-    personName: "Eugen Esanu",
-    personAvatar: "",
-    title: "Founder - shosho.design",
-    testimonial:
-      "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-  },
-  {
-    personName: "Joe Matkin",
-    personAvatar: "",
-    title: "Freelancer",
-    testimonial:
-      "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
-  },
+      "Jay did great work for our clinic website, I see his expertise and knowledge about implementing ideas with the Next.js technology, Excellent job done by his team.",
+  }
 ];

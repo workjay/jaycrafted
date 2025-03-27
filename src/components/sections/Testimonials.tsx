@@ -19,7 +19,7 @@ export default function Testimonials() {
           Hear what others have to say about working with me:
         </SecondaryText>
         <Box display={"flex"} flexDirection={"column"} mt={4} width={"100%"}>
-          <PrimarySlider>
+          <PrimarySlider slidesPerView={TESTIMONIALS?.length < 4 ? TESTIMONIALS?.length : 3}>
             {TESTIMONIALS.map(
               (testimonial: TestimonialDetailTypes, i: number) => (
                 <SwiperSlide key={i}>
