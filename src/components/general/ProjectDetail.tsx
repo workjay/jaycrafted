@@ -105,7 +105,7 @@ export default function ProjectDetail({
               <Chip
                 key={i}
                 label={
-                  <Typography variant="body1" fontWeight={500}>
+                  <Typography variant="body1" fontWeight={500} lineHeight={1}>
                     {technologyName}
                   </Typography>
                 }

@@ -221,6 +221,14 @@ export const PROJECTS: ProjectDetailTypes[] = [
     title: "Full Stack Developer",
   },
   {
+    name: "Disrupt Innovation",
+    description: "Disrupt Innovation is a platform that fosters creativity through game-like competitions, challenging participants to generate groundbreaking ideas in engineering and technology while exploring futuristic concepts like advanced sensing and space exploration strategies.",
+    url: "https://disruptinnovation.com/",
+    previewImage: "/images/projects/disrupt_innovation.png",
+    technologies: ["React", "Tailwind CSS", "Material UI", "FastAPI Integration"],
+    title: "Front-end Developer",
+  },
+  {
     name: "Boltify.AI",
     description:
       "Boltify is a lead management system that automates meetings through cold calls and follow-ups from Google Maps. Designed for agencies, teams, startups, and B2B businesses, it streamlines lead generation and engagement with local businesses, making the process faster and more efficient.",
