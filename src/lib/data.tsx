@@ -31,12 +31,6 @@ export const SOCIAL_LINKS: SocialLinkTypes[] = [
     url: "https://gitlab.com/workjay",
     iconAlt: "GitLab Icon",
   },
-  {
-    icon: "/images/logos/x-light.svg",
-    darkModeIcon: "/images/logos/x-dark.svg",
-    url: "https://x.com/depani_jay",
-    iconAlt: "X Icon",
-  },
 ];
 
 export const EXPERIENCES: ExperienceDetailTypes[] = [
@@ -222,10 +216,16 @@ export const PROJECTS: ProjectDetailTypes[] = [
   },
   {
     name: "Disrupt Innovation",
-    description: "Disrupt Innovation is a platform that fosters creativity through game-like competitions, challenging participants to generate groundbreaking ideas in engineering and technology while exploring futuristic concepts like advanced sensing and space exploration strategies.",
+    description:
+      "Disrupt Innovation is a platform that fosters creativity through game-like competitions, challenging participants to generate groundbreaking ideas in engineering and technology while exploring futuristic concepts like advanced sensing and space exploration strategies.",
     url: "https://disruptinnovation.com/",
     previewImage: "/images/projects/disrupt_innovation.png",
-    technologies: ["React", "Tailwind CSS", "Material UI", "FastAPI Integration"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Material UI",
+      "FastAPI Integration",
+    ],
     title: "Front-end Developer",
   },
   {
@@ -395,5 +395,5 @@ export const TESTIMONIALS: TestimonialDetailTypes[] = [
     title: "Clinic Owner",
     testimonial:
       "Jay did great work for our clinic website, I see his expertise and knowledge about implementing ideas with the Next.js technology, Excellent job done by his team.",
-  }
+  },
 ];
