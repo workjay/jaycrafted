@@ -31,6 +31,16 @@ export const SOCIAL_LINKS: SocialLinkTypes[] = [
     url: "https://gitlab.com/workjay",
     iconAlt: "GitLab Icon",
   },
+  {
+    icon: "/images/logos/upwork-logo.png",
+    url: "https://www.upwork.com/freelancers/~01abb74e514da03118?mp_source=share",
+    iconAlt: "Upwork Icon",
+  },
+  {
+    icon: "/images/logos/linkedin-logo.png",
+    url: "https://www.linkedin.com/in/jay-depani-500408204",
+    iconAlt: "LinkedIn Icon",
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetailTypes[] = [
@@ -390,9 +400,19 @@ export const PROJECTS: ProjectDetailTypes[] = [
 
 export const TESTIMONIALS: TestimonialDetailTypes[] = [
   {
+    personName: "Fuad Miah",
+    personAvatar: "/images/client-profile-pictures/fuad-miah.webp",
+    title: "Founder - Karmaflow AI",
+    rating: 5,
+    hidden: true,
+    testimonial:
+      "My react project was delivered much faster than expected with higher quality than asked for.",
+  },
+  {
     personName: "Pratik Kansagara",
     personAvatar: "/images/client-profile-pictures/pratik-kansagara.jpeg",
     title: "Clinic Owner",
+    rating: 5,
     testimonial:
       "Jay did great work for our clinic website, I see his expertise and knowledge about implementing ideas with the Next.js technology, Excellent job done by his team.",
   },

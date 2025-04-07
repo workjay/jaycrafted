@@ -50,4 +50,6 @@ export type TestimonialDetailTypes = {
   personAvatar?: string;
   testimonial: string;
   title: string;
+  rating: number;
+  hidden?: boolean;
 };

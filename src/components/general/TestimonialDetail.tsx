@@ -1,7 +1,7 @@
 "use client";
 
 import { TestimonialDetailTypes } from "@/lib/types";
-import { Avatar, Box, Card, styled, Typography } from "@mui/material";
+import { Avatar, Box, Card, Rating, styled, Typography } from "@mui/material";
 
 const StyledCard = styled(Card)(({ theme }) => ({
   display: "flex",
@@ -21,6 +21,7 @@ export default function TestimonialDetail({
   testimonial,
   title,
   personAvatar,
+  rating,
 }: TestimonialDetailTypes) {
   return (
     <StyledCard>
@@ -28,6 +29,17 @@ export default function TestimonialDetail({
       <Typography variant="body1" align="left">
         &ldquo;{testimonial}&rdquo;
       </Typography>
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        gap={1}
+      >
+        <Rating value={rating} size="small" readOnly />
+        <Typography variant="body1" color="textPrimary" lineHeight={1}>
+          {rating.toFixed(2)}
+        </Typography>
+      </Box>
       <Box display={"flex"} flexDirection={"column"} gap={"0.25rem"}>
         <Typography variant="h3">{personName}</Typography>
         <Typography variant="body2">{title}</Typography>

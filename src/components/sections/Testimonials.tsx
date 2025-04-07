@@ -10,6 +10,10 @@ import PrimarySlider from "../general/PrimarySlider";
 import { SwiperSlide } from "swiper/react";
 import TestimonialDetail from "../general/TestimonialDetail";
 
+const filteredTestimonials: TestimonialDetailTypes[] = TESTIMONIALS.filter(
+  (testimonial: TestimonialDetailTypes) => !testimonial.hidden
+);
+
 export default function Testimonials() {
   return (
     <SectionLayout id="testimonials">
@@ -19,8 +23,14 @@ export default function Testimonials() {
           Hear what others have to say about working with me:
         </SecondaryText>
         <Box display={"flex"} flexDirection={"column"} mt={4} width={"100%"}>
-          <PrimarySlider slidesPerView={TESTIMONIALS?.length < 4 ? TESTIMONIALS?.length : 3}>
-            {TESTIMONIALS.map(
+          <PrimarySlider
+            slidesPerView={
+              filteredTestimonials?.length < 4
+                ? filteredTestimonials?.length
+                : 3
+            }
+          >
+            {filteredTestimonials.map(
               (testimonial: TestimonialDetailTypes, i: number) => (
                 <SwiperSlide key={i}>
                   <TestimonialDetail {...testimonial} />

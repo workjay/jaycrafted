@@ -19,6 +19,7 @@ import {
   useMediaQuery,
   useScrollTrigger,
   Fab,
+  alpha,
 } from "@mui/material";
 import { useThemeContext } from "../ThemeProvider";
 import { Moon, Sun, Menu, X } from "lucide-react";
@@ -52,7 +53,9 @@ export default function Navbar(props: Props) {
       <AppBar
         sx={{
           backgroundColor: trigger
-            ? "rgba(255, 255, 255, 0.8)" // Light mode: Semi-transparent white
+            ? theme.palette.mode === "light"
+              ? "rgba(255, 255, 255, 0.8)"
+              : alpha(theme.palette.background.default, 0.6) // Light mode: Semi-transparent white
             : "transparent", // Fully transparent when at the top
           backdropFilter: "blur(10px)", // Blurred background effect
           color: "text.primary",
