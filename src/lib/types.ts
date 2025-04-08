@@ -43,6 +43,7 @@ export type ProjectDetailTypes = {
   previewImage: string;
   technologies: string[];
   title: string;
+  hidden?: boolean;
 };
 
 export type TestimonialDetailTypes = {

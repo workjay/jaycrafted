@@ -237,6 +237,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "FastAPI Integration",
     ],
     title: "Front-end Developer",
+    hidden: true,
   },
   {
     name: "Boltify.AI",

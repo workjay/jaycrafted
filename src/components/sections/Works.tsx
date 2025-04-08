@@ -10,6 +10,10 @@ import ProjectDetail from "../general/ProjectDetail";
 import PrimarySlider from "../general/PrimarySlider";
 import { SwiperSlide } from "swiper/react";
 
+const filteredProjects: ProjectDetailTypes[] = PROJECTS.filter(
+  (project: ProjectDetailTypes) => !project.hidden
+);
+
 export default function Works() {
   return (
     <SectionLayout id="works">
@@ -21,7 +25,7 @@ export default function Works() {
         </SecondaryText>
         <Box display={"flex"} flexDirection={"column"} mt={4} width={"100%"}>
           <PrimarySlider>
-            {PROJECTS.map((project: ProjectDetailTypes, i: number) => (
+            {filteredProjects.map((project: ProjectDetailTypes, i: number) => (
               <SwiperSlide key={i}>
                 <ProjectDetail {...project} />
               </SwiperSlide>
