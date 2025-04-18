@@ -42,6 +42,11 @@ export const SOCIAL_LINKS: SocialLinkTypes[] = [
     url: "https://www.linkedin.com/in/jay-depani-500408204",
     iconAlt: "LinkedIn Icon",
   },
+  {
+    icon: "/images/logos/hackerrank.svg",
+    url: "https://www.hackerrank.com/profile/workjay",
+    iconAlt: "HackerRank Icon",
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetailTypes[] = [
