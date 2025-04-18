@@ -39,7 +39,7 @@ export const SOCIAL_LINKS: SocialLinkTypes[] = [
   },
   {
     icon: "/images/logos/linkedin-logo.png",
-    url: "https://www.linkedin.com/in/jay-depani-500408204",
+    url: "https://www.linkedin.com/in/workjay/",
     iconAlt: "LinkedIn Icon",
   },
   {
