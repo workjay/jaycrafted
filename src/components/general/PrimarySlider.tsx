@@ -54,7 +54,8 @@ const PrimarySlider = ({ children, slidesPerView = 1 }: PrimarySliderProps) => {
                 slidesPerView: slidesPerView > 1 ? 2 : 1,
               },
               1250: {
-                slidesPerView: slidesPerView > 1 ? 3 : 1,
+                slidesPerView:
+                  slidesPerView > 2 ? 3 : slidesPerView > 1 ? 2 : 1,
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
