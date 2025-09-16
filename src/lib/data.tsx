@@ -215,6 +215,23 @@ export const SKILLS: SkillDetailTypes[] = [
 
 export const PROJECTS: ProjectDetailTypes[] = [
   {
+    name: "Giveable.AI",
+    description:
+      "The simplest AI-powered tool for Non-Profits, Churches, Creators, and Fundraisers to grow support, automate giving, and track impact.",
+    url: "https://www.giveable.ai/",
+    previewImage: "/images/projects/giveable.png",
+    technologies: [
+      "Next.js",
+      "Laravel",
+      "Node.js",
+      "MySQL",
+      "Stripe",
+      "Material UI",
+    ],
+    hidden: true,
+    title: "Full Stack Developer",
+  },
+  {
     name: "Bookify.AI",
     description:
       "We built a platform that allows users to interact with PDFs, books, documents, websites, YouTube videos, and more using AI-powered chat. Designed for students, researchers, and professionals, this tool transforms the way people learn and access information by enabling seamless AI-driven conversations with various content sources.",
@@ -224,7 +241,24 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Next.js",
       "Laravel",
       "MySQL",
+      "Node.js",
       "OpenAI API",
+      "Stripe",
+      "Material UI",
+    ],
+    title: "Full Stack Developer",
+  },
+  {
+    name: "Memberly",
+    description:
+      "A platform where LinkedIn, YouTube, and Instagram creators build and grow their own groups. Members can join groups to access posts, events, articles, and rankings, while creators earn through group subscriptions.",
+    url: "https://www.memberly.ai/",
+    previewImage: "/images/projects/memberly.png",
+    technologies: [
+      "Next.js",
+      "Laravel",
+      "Node.js",
+      "MySQL",
       "Stripe",
       "Material UI",
     ],
@@ -243,7 +277,6 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "FastAPI Integration",
     ],
     title: "Front-end Developer",
-    hidden: true,
   },
   {
     name: "Boltify.AI",
@@ -255,6 +288,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Next.js",
       "Laravel",
       "MySQL",
+      "Node.js",
       "Google Places API",
       "Stripe",
       "Material UI",
@@ -271,6 +305,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Next.js",
       "Laravel",
       "MySQL",
+      "Node.js",
       "WebRTC",
       "Stripe",
       "Material UI",
@@ -318,7 +353,7 @@ export const PROJECTS: ProjectDetailTypes[] = [
     name: "Candu Maintenance",
     description:
       "Candu Maintenance is a comprehensive platform that streamlines maintenance and facility management services. It offers features like task tracking, service requests, and reporting to improve operational efficiency.",
-    url: "https://www.candumaintenance.com/",
+    url: "",
     previewImage: "/images/projects/candu_maintenance.png",
     technologies: [
       "Next.js",
@@ -411,7 +446,6 @@ export const TESTIMONIALS: TestimonialDetailTypes[] = [
     personAvatar: "/images/client-profile-pictures/fuad-miah.webp",
     title: "Founder - Karmaflow AI",
     rating: 5,
-    hidden: true,
     testimonial:
       "My react project was delivered much faster than expected with higher quality than asked for.",
   },
