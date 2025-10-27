@@ -225,10 +225,10 @@ export const PROJECTS: ProjectDetailTypes[] = [
       "Laravel",
       "Node.js",
       "MySQL",
+      "OpenAI API",
       "Stripe",
       "Material UI",
     ],
-    hidden: true,
     title: "Full Stack Developer",
   },
   {
