@@ -450,6 +450,12 @@ export const TESTIMONIALS: TestimonialDetailTypes[] = [
       "My react project was delivered much faster than expected with higher quality than asked for.",
   },
   {
+    personName: "Eugene Gelfand",
+    title: "Pixel Perfect Creation",
+    rating: 5,
+    testimonial: "Great work!!!",
+  },
+  {
     personName: "Pratik Kansagara",
     personAvatar: "/images/client-profile-pictures/pratik-kansagara.jpeg",
     title: "Clinic Owner",
