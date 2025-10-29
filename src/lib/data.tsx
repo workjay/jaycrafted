@@ -37,11 +37,11 @@ export const SOCIAL_LINKS: SocialLinkTypes[] = [
     url: "https://www.upwork.com/freelancers/~01abb74e514da03118?mp_source=share",
     iconAlt: "Upwork Icon",
   },
-  {
-    icon: "/images/logos/linkedin-logo.png",
-    url: "https://www.linkedin.com/in/workjay/",
-    iconAlt: "LinkedIn Icon",
-  },
+  // {
+  //   icon: "/images/logos/linkedin-logo.png",
+  //   url: "https://www.linkedin.com/in/workjay/",
+  //   iconAlt: "LinkedIn Icon",
+  // },
   {
     icon: "/images/logos/hackerrank.svg",
     url: "https://www.hackerrank.com/profile/workjay",
