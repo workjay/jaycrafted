@@ -17,7 +17,7 @@ export const NAV_LINKS: NavLinkTypes[] = [
   { label: "Skills", href: "#skills" },
   { label: "Works", href: "#works" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export const SOCIAL_LINKS: SocialLinkTypes[] = [
